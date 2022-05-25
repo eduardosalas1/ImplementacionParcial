@@ -6,10 +6,10 @@ class Observer():
         self.numbers = []
         self.win = False
 
-    def update(self,subject):
+    def update(self,subject):#Sirve para heredar
         pass
 
-    def verify(self):
+    def verify(self):#Sirve para heredar
         pass
 
 
@@ -55,7 +55,7 @@ class CincoNumerosImpares(Observer):
 
 class NumeroPrimo(Observer):
 
-    def esPrimo(num):
+    def esPrimo(self,num):
         if num < 1:
             return False
         elif num == 2:
